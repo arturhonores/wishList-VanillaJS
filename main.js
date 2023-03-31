@@ -39,13 +39,15 @@ class="fa-sharp fa-solid fa-circle-check confirmar"></i></li>`
     contarPropos()
   })
 
-  //función confirmar
+  //confirmar propósitos
   listaPropo.addEventListener('click', (e) => {
     if (e.target.classList.contains('confirmar')) {
+      e.target.parentElement.remove()
       const propoConfirmado = e.target.parentElement.innerText
       const listaConfirmada = document.getElementById("lista-propo2")
       const nuevaPropo = `<li>${propoConfirmado}</li>`
       listaConfirmada.innerHTML += nuevaPropo
+
       contarPropos()
     }
   })
