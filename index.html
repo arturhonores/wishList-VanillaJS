@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WishList</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e080e2d9a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Própositos Año Nuevo</h1>
+    <form id="form-crear">
+      <input type="text" id="crear" placeholder="Escribe tu propósito">
+      <button><i class="fa-solid fa-plus"></i></button>
+    </form>
+  </header>
+  <main>
+    <section>
+      <div class="container-titulo">
+        <h2>Lista de Propósitos</h2>
+        <div id="counter1" class="contador1"></div>
+      </div>
+      <ul id="lista-propo" class="list-group">
+        <li>Puedes eliminar o enviar tus propósitos a la lista de "propósitos cumplidos" <i
+            class="fa-solid fa-circle-xmark borrar"></i><i class="fa-sharp fa-solid fa-circle-check confirmar"></i></li>
+      </ul>
+    </section>
+    <section>
+      <div class="container-titulo">
+        <h2>Propósitos Cumplidos</h2>
+        <div class="contador2"></div>
+      </div>
+      <ul id="lista-propo2">
+      </ul>
+    </section>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

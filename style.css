@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  gap: 10rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  padding: 0;
+}
+
+.borrar {
+  cursor: pointer;
+}
+
+.confirmar {
+  cursor: pointer;
+}
+
+.container-titulo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contador1 {
+  width: 2rem;
+  height: 2rem;
+  background-color: yellow;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contador2 {
+  width: 2rem;
+  height: 2rem;
+  background-color: greenyellow;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-circle-xmark {
+  color: #f71e35;
+}
+
+.fa-circle-check {
+  color: blue;
+}
+
+#crear {
+  width: 30rem;
+}
